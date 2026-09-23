@@ -1,4 +1,4 @@
-const redisClient = require("./config/redis");
+const redisClient = require("../config/redis");
 
 redisClient.set("otp", "123456", {
     EX: 60
