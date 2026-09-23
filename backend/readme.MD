@@ -26,6 +26,7 @@ const users = JSON.parse(data);
 
 
 Topic: Redis Lists.
+
 A Redis List is an ordered collection of values.
 
 Think of a JavaScript array:
@@ -51,3 +52,26 @@ Main commands:
 | `RPOP`   | `rPop()`   | Remove from end       |
 | `LRANGE` | `lRange()` | Get elements          |
 | `LLEN`   | `lLen()`   | Get list length       |
+
+
+Topic:sets
+
+For Redis Sets, these are the main functions we should learn. Since you're learning step-by-step, I’d cover them in this order.
+
+
+| Redis command | Node.js function | Purpose                                           |
+| ------------- | ---------------- | ------------------------------------------------- |
+| `SADD`        | `sAdd()`         | Add one or more members                           |
+| `SMEMBERS`    | `sMembers()`     | Get all members                                   |
+| `SISMEMBER`   | `sIsMember()`    | Check whether a member exists                     |
+| `SCARD`       | `sCard()`        | Get number of members                             |
+| `SREM`        | `sRem()`         | Remove one or more members                        |
+| `SPOP`        | `sPop()`         | Remove and return random member(s)                |
+| `SRANDMEMBER` | `sRandMember()`  | Get random member(s) without removing             |
+| `SMOVE`       | `sMove()`        | Move a member from one Set to another             |
+| `SUNION`      | `sUnion()`       | Combine members from multiple Sets                |
+| `SINTER`      | `sInter()`       | Get common members between Sets                   |
+| `SDIFF`       | `sDiff()`        | Get members that exist in one Set but not another |
+| `SUNIONSTORE` | `sUnionStore()`  | Store union result in another Set                 |
+| `SINTERSTORE` | `sInterStore()`  | Store intersection result                         |
+| `SDIFFSTORE`  | `sDiffStore()`   | Store difference result                           |
